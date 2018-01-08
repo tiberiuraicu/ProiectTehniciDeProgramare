@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <title>User</title>
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/resources/css/user.css">
+	href="${pageContext.request.contextPath}/resources/css/order.css">
 <script src="${pageContext.request.contextPath}/resources/js/jquery.js"></script>
 <script
 	src="${pageContext.request.contextPath}/resources/js/jquery.color.js"></script>

@@ -4,6 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Alarm Data</title>
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/resources/css/order.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -18,30 +20,22 @@
 	
 
 	<section id="content">
-	
-		
-
-		<div class="tbl-header">
-
-			<table cellpadding="0" cellspacing="0" border="0">
-
+		<div>
+			<table>
 				<tr>
 					<th>Title</th>
 					<th>TimeStamp</th>
 					<th>Priority</th>
 					<th>Message</th>
-
-
 				</tr>
 
 			</table>
 		</div>
-		<div class="tbl-content">
+		<div >
 			<table>
 				<c:forEach var="tempCostumer" items="${pendingOrders}">
 					
-						
-							<tr bgcolor="#8A0808">
+							<tr>
 							    <td>${tempCostumer.id}</td>
 								<td>${tempCostumer.foodId}</td>
 								<td>${tempCostumer.foodName}</td>
@@ -51,11 +45,6 @@
 								<td>${tempCostumer.numberOfProducts}</td>
 							</tr>
 						
-
-
-					
-
-				
 				</c:forEach>
 
 			</table>
