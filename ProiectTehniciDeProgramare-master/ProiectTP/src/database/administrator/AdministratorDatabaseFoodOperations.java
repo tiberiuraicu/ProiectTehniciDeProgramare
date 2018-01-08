@@ -22,6 +22,7 @@ public class AdministratorDatabaseFoodOperations {
 		return pendingOrder;
 		
 	}
+	
 	public void updatePendingOrder(PendingOrder pendingOrder)
 	{
 		session = factory.getCurrentSession();

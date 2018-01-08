@@ -11,12 +11,12 @@
 	src="${pageContext.request.contextPath}/resources/js/jquery.color.js"></script>
 <script>
 	$(document).ready(function() {
-		$(document).ready(function(){
-			$('#bars').click(function(){
+		$(document).ready(function() {
+			$('#bars').click(function() {
 				$('#right-bar').slideToggle();
 			});
 
-			$('#select1').click(function(){
+			$('#select1').click(function() {
 				$('#div-sel2').fadeOut();
 				$('#div-sel3').fadeOut();
 				$('#div-sel1').fadeToggle();
@@ -24,12 +24,12 @@
 				$('#grey-bck').fadeIn();
 			});
 
-			$('#save-bttn').click(function(){
+			$('#save-bttn').click(function() {
 				$('#div-sel1').fadeOut();
 				$('#grey-bck').fadeOut();
 			});
 
-			$('#select2').click(function(){
+			$('#select2').click(function() {
 				$('#div-sel1').fadeOut();
 				$('#div-sel3').fadeOut();
 				$('#div-sel2').fadeToggle();
@@ -38,29 +38,29 @@
 
 			});
 
-			$('#select3').click(function(){
+			$('#select3').click(function() {
 				$('#div-sel2').fadeOut();
 				$('#div-sel1').fadeOut();
 				$('#div-sel3').fadeToggle();
-				
+
 			});
 
-			$('#ex-bttn').click(function(){
+			$('#ex-bttn').click(function() {
 				$('#div-sel1').fadeOut();
 				$('#grey-bck').fadeOut();
 			});
 
-			$('#ex-bttn2').click(function(){
+			$('#ex-bttn2').click(function() {
 				$('#div-sel2').fadeOut();
 				$('#grey-bck').fadeOut();
 			});
 
-			contact-bttn
-			$('#contact-bttn').click(function(){
+			$('#contact-bttn').click(function() {
 				$('#div-sel2').fadeOut();
 				$('#grey-bck').fadeOut();
 			});
-	 });	
+		});
+	});
 </script>
 
 <!-- Client details modifier -->
@@ -199,47 +199,57 @@
 			</div>
 			<div id="div-sel2">
 				<h2>Contact us</h2>
-			<br>
-			<br>
-			<form action="">
-				<div id="subject-contact"><label for="">Subiect</label>
-				<input type="text"></div>
-				<br>
-				<br>
-				<label id="msg-label" for="">Mesaj</label>
-				<textarea name="" id="msg-txtarea" cols="30" rows="10">	</textarea>
-				<br>
-				<br>
-				<div id=></div>
-				<button id="contact-bttn">Send</button>
-			</form>
-			<div id="ex-bttn2">X</div>
-		</div>
+				<br> <br>
+				<form action="">
+					<div id="subject-contact">
+						<label for="">Subiect</label> <input type="text">
+					</div>
+					<br> <br> <label id="msg-label" for="">Mesaj</label>
+					<textarea name="" id="msg-txtarea" cols="30" rows="10">	</textarea>
+					<br> <br>
+					<div id=></div>
+					<button id="contact-bttn">Send</button>
+				</form>
+				<div id="ex-bttn2">X</div>
 			</div>
-		<div id="recomand">
-			<h2>Program</h2>
-			<h3>Luni:9:00 - 22:00</h3>
-			<h3>Marti:9:00 - 22:00</h3>
-			<h3>Miercuri:9:00 - 22:00</h3>
-			<h3>Joi:9:00 - 22:00</h3>
-			<h3>Vineri:9:00 - 22:00</h3>
-			<h3>Sambata:10:00 - 16:00</h3>
-			<h3>Duminica:10:00 - 13:00</h3>
-		</div>
+	</div>
+	<div id="recomand">
+		<h2>Program</h2>
+		<h3>Luni:9:00 - 22:00</h3>
+		<h3>Marti:9:00 - 22:00</h3>
+		<h3>Miercuri:9:00 - 22:00</h3>
+		<h3>Joi:9:00 - 22:00</h3>
+		<h3>Vineri:9:00 - 22:00</h3>
+		<h3>Sambata:10:00 - 16:00</h3>
+		<h3>Duminica:10:00 - 13:00</h3>
+	</div>
 
-		<div id="window">
-			<h2 id="window-head">News</h2>
-			<p id="window-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis varius tortor. Vestibulum at ex sed est lacinia molestie id fermentum metus. Cras vel velit varius, egestas nulla et, gravida arcu. Etiam arcu ligula, facilisis a sodales in, consectetur a augue. Nunc auctor ante eget finibus porttitor. Suspendisse viverra rhoncus dolor suscipit interdum. Morbi hendrerit massa sed enim iaculis elementum. Phasellus sit amet ex malesuada, blandit nunc quis, dignissim mi. Pellentesque ut magna eu tortor elementum blandit mollis sed eros. Suspendisse potenti. Praesent dignissim eu dui vel tristique. Mauris blandit pharetra libero, sed molestie metus maximus sit amet.</p>
-			<hr>
-		
-		<img id="reduceri_1" src="${pageContext.request.contextPath}/resources/images/ap5.jpg" alt="">
-		<img id="reduceri_2" src="${pageContext.request.contextPath}/resources/images/nod1.jpg" alt="">
-		<div id="equal"> = </div>
+	<div id="window">
+		<h2 id="window-head">News</h2>
+		<p id="window-paragraph">Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Nullam quis varius tortor. Vestibulum at ex sed est
+			lacinia molestie id fermentum metus. Cras vel velit varius, egestas
+			nulla et, gravida arcu. Etiam arcu ligula, facilisis a sodales in,
+			consectetur a augue. Nunc auctor ante eget finibus porttitor.
+			Suspendisse viverra rhoncus dolor suscipit interdum. Morbi hendrerit
+			massa sed enim iaculis elementum. Phasellus sit amet ex malesuada,
+			blandit nunc quis, dignissim mi. Pellentesque ut magna eu tortor
+			elementum blandit mollis sed eros. Suspendisse potenti. Praesent
+			dignissim eu dui vel tristique. Mauris blandit pharetra libero, sed
+			molestie metus maximus sit amet.</p>
+		<hr>
+
+		<img id="reduceri_1"
+			src="${pageContext.request.contextPath}/resources/images/ap5.jpg"
+			alt=""> <img id="reduceri_2"
+			src="${pageContext.request.contextPath}/resources/images/nod1.jpg"
+			alt="">
+		<div id="equal">=</div>
 		<div id="circle">
 			<p id="circle-text">-20%</p>
 		</div>
-		</div>
-		</div>
+	</div>
+	</div>
 	</section>
 </body>
 </html>
