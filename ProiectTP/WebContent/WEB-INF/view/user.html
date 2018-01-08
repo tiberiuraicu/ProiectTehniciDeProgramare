@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>User</title>
+	<link rel="stylesheet" href="css/user.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.color.js"></script>
+	<script>
+		$(document).ready(function(){
+				$('#bars').click(function(){
+					$('#right-bar').slideToggle();
+				});
+
+				$('#select1').click(function(){
+					$('#div-sel2').fadeOut();
+					$('#div-sel3').fadeOut();
+					$('#div-sel1').fadeToggle();
+					$('#right-bar').slideUp();
+					$('#grey-bck').fadeIn();
+				});
+
+				$('#save-bttn').click(function(){
+					$('#div-sel1').fadeOut();
+					$('#grey-bck').fadeOut();
+				});
+
+				$('#select2').click(function(){
+					$('#div-sel1').fadeOut();
+					$('#div-sel3').fadeOut();
+					$('#div-sel2').fadeToggle();
+					$('#right-bar').slideUp();
+					$('#grey-bck').fadeIn();
+
+				});
+
+				$('#select3').click(function(){
+					$('#div-sel2').fadeOut();
+					$('#div-sel1').fadeOut();
+					$('#div-sel3').fadeToggle();
+					
+				});
+
+				$('#ex-bttn').click(function(){
+					$('#div-sel1').fadeOut();
+					$('#grey-bck').fadeOut();
+				});
+
+				$('#ex-bttn2').click(function(){
+					$('#div-sel2').fadeOut();
+					$('#grey-bck').fadeOut();
+				});
+
+				contact-bttn
+				$('#contact-bttn').click(function(){
+					$('#div-sel2').fadeOut();
+					$('#grey-bck').fadeOut();
+				});
+		 });	
+	</script>
+</head>
+<body>
+	<div class="container">
+
+	<header>
+			<div class="top_header">
+				<img id="bars" src="imgs/3bars.png" alt="">
+				<button>Log out</button>
+			</div>
+			<img src="imgs/img3.png" class = "user">
+	</header>
+
+	<section id="left-section">
+			<div id="right-bar">
+				<ul id="lista">
+					<a href="#"><li>Meniu</li></a>
+					<a href="#"><li>Rezervare</li></a>
+					<li id="select1">Setarile contului</li>
+					<li id="select2">Contact</li>
+				</ul>
+			</div>
+	</section>
+
+	<section id="right-section">
+		<div id="grey-bck">
+		<div id="div-sel1">
+			<h2>Setarile contului</h2>
+				<form action="">
+					<h3>Date personale</h3>
+					<label for="">Nume</label>
+					<input type="text">
+					<label for="">Prenume</label>
+					<input type="text">
+					<br>
+					<br>
+					<label for="">Telefon</label>
+					<input type="text">
+					<br>
+					<br>
+					<label for="">Domiciliu</label>
+					<input type="text">
+				</form>
+				<button id='save-bttn'>Save</button>
+				<div id="ex-bttn">X</div>
+				<h3 id="hp">Modificare parola</h3>
+				<br>
+				<br>
+				<div id="right-form">
+					<form action="">
+						<label for="">Parola noua</label>
+						<input type="password">
+						<br>
+						<label for="">Confirmare</label>
+						<input type="password">
+					</form>
+				</div>
+				<h3 id="he">Modificare e-mail</h3>
+				<div id="right-form2">
+					<form action="">
+						<label for="">Email nou</label>
+						<input type="email">
+					</form>
+				</div>
+		</div>
+		
+		<div id="div-sel2">
+			<h2>Contact us</h2>
+			<br>
+			<br>
+			<form action="">
+				<div id="subject-contact"><label for="">Subiect</label>
+				<input type="text"></div>
+				<br>
+				<br>
+				<label id="msg-label" for="">Mesaj</label>
+				<textarea name="" id="msg-txtarea" cols="30" rows="10">	</textarea>
+				<br>
+				<br>
+				<div id=></div>
+				<button id="contact-bttn">Send</button>
+			</form>
+			<div id="ex-bttn2">X</div>
+		</div>
+		</div>
+		
+		
+		<div id="recomand">
+			<h2>Program</h2>
+			<h3>Luni:9:00 - 22:00</h3>
+			<h3>Marti:9:00 - 22:00</h3>
+			<h3>Miercuri:9:00 - 22:00</h3>
+			<h3>Joi:9:00 - 22:00</h3>
+			<h3>Vineri:9:00 - 22:00</h3>
+			<h3>Sambata:10:00 - 16:00</h3>
+			<h3>Duminica:10:00 - 13:00</h3>
+		</div>
+
+		<div id="window">
+			<h2 id="window-head">News</h2>
+			<p id="window-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis varius tortor. Vestibulum at ex sed est lacinia molestie id fermentum metus. Cras vel velit varius, egestas nulla et, gravida arcu. Etiam arcu ligula, facilisis a sodales in, consectetur a augue. Nunc auctor ante eget finibus porttitor. Suspendisse viverra rhoncus dolor suscipit interdum. Morbi hendrerit massa sed enim iaculis elementum. Phasellus sit amet ex malesuada, blandit nunc quis, dignissim mi. Pellentesque ut magna eu tortor elementum blandit mollis sed eros. Suspendisse potenti. Praesent dignissim eu dui vel tristique. Mauris blandit pharetra libero, sed molestie metus maximus sit amet.</p>
+			<hr>
+		
+		<img id="reduceri_1" src="pics/ap5.jpg" alt="">
+		<img id="reduceri_2" src="pics/nod1.jpg" alt="">
+		<div id="equal"> = </div>
+		<div id="circle">
+			<p id="circle-text">-20%</p>
+		</div>
+		</div>
+		</div>
+	</section>
+</body>
+</html>
