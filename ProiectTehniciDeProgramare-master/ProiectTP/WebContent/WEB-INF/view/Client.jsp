@@ -5,62 +5,62 @@
 <meta charset="UTF-8">
 <title>User</title>
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/resources/css/order.css">
+	href="${pageContext.request.contextPath}/resources/css/user.css">
 <script src="${pageContext.request.contextPath}/resources/js/jquery.js"></script>
 <script
 	src="${pageContext.request.contextPath}/resources/js/jquery.color.js"></script>
 <script>
-	$(document).ready(function() {
-		$(document).ready(function() {
-			$('#bars').click(function() {
-				$('#right-bar').slideToggle();
-			});
-
-			$('#select1').click(function() {
-				$('#div-sel2').fadeOut();
-				$('#div-sel3').fadeOut();
-				$('#div-sel1').fadeToggle();
-				$('#right-bar').slideUp();
-				$('#grey-bck').fadeIn();
-			});
-
-			$('#save-bttn').click(function() {
-				$('#div-sel1').fadeOut();
-				$('#grey-bck').fadeOut();
-			});
-
-			$('#select2').click(function() {
-				$('#div-sel1').fadeOut();
-				$('#div-sel3').fadeOut();
-				$('#div-sel2').fadeToggle();
-				$('#right-bar').slideUp();
-				$('#grey-bck').fadeIn();
-
-			});
-
-			$('#select3').click(function() {
-				$('#div-sel2').fadeOut();
-				$('#div-sel1').fadeOut();
-				$('#div-sel3').fadeToggle();
-
-			});
-
-			$('#ex-bttn').click(function() {
-				$('#div-sel1').fadeOut();
-				$('#grey-bck').fadeOut();
-			});
-
-			$('#ex-bttn2').click(function() {
-				$('#div-sel2').fadeOut();
-				$('#grey-bck').fadeOut();
-			});
-
-			$('#contact-bttn').click(function() {
-				$('#div-sel2').fadeOut();
-				$('#grey-bck').fadeOut();
-			});
-		});
+$(document).ready(function(){
+	$('#bars').click(function(){
+		$('#right-bar').slideToggle();
 	});
+
+	$('#select1').click(function(){
+		$('#div-sel2').fadeOut();
+		$('#div-sel3').fadeOut();
+		$('#div-sel1').fadeToggle();
+		$('#right-bar').slideUp();
+		$('#grey-bck').fadeIn();
+	});
+
+	$('#save-bttn').click(function(){
+		$('#div-sel1').fadeOut();
+		$('#grey-bck').fadeOut();
+	});
+
+	$('#select2').click(function(){
+		$('#div-sel1').fadeOut();
+		$('#div-sel3').fadeOut();
+		$('#div-sel2').fadeToggle();
+		$('#right-bar').slideUp();
+		$('#grey-bck').fadeIn();
+
+	});
+
+	$('#select3').click(function(){
+		$('#div-sel2').fadeOut();
+		$('#div-sel1').fadeOut();
+		$('#div-sel3').fadeToggle();
+		
+	});
+
+	$('#ex-bttn').click(function(){
+		$('#div-sel1').fadeOut();
+		$('#grey-bck').fadeOut();
+	});
+
+	$('#ex-bttn2').click(function(){
+		$('#div-sel2').fadeOut();
+		$('#grey-bck').fadeOut();
+	});
+
+	contact-bttn
+	$('#contact-bttn').click(function(){
+		$('#div-sel2').fadeOut();
+		$('#grey-bck').fadeOut();
+	});
+});	
+
 </script>
 
 <!-- Client details modifier -->
@@ -196,7 +196,7 @@
 						</form>
 					</div>
 				</div>
-			</div>
+			
 			<div id="div-sel2">
 				<h2>Contact us</h2>
 				<br> <br>

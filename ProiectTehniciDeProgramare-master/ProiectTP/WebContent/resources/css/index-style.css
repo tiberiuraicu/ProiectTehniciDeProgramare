@@ -2,7 +2,7 @@ body
 {
 	margin:0;
 	padding: 0;
-	background:url(../imgs/img2.jpg);
+	background:url(../images/img2.jpg);
 	background-size: cover;
 	font-family: sans-serif;
 }
@@ -78,8 +78,8 @@ body
 
 .min_menu {
 	position:absolute;
-	margin-left:250px;
-	margin-top:530px;
+	margin-left:220px;
+	margin-top:490px;
 	background-color:#3D1313;
 	width:92px;
 	height:115px;
