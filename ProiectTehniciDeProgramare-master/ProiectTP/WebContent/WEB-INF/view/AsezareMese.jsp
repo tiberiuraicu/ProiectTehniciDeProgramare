@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
+
 <title>Admin</title>
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/css/Admin.css">
@@ -15,10 +16,11 @@
 <script>
 
 	$(document).ready(function() {
+		
 		var mese = [];
 		var i = 0;
 		var $masa;
-
+        var masaSelectata="";
 
 		$('#add_obiect').click(function() {
 			$('#add_masa').fadeToggle();
@@ -41,9 +43,10 @@
 
 
 			$("img").mouseup(function() {
-
+				masaSelectata=$(this).attr("id")
 				for (i = 0; i < mese.length; i++) {
 					if (mese[i].id == $(this).attr("id")) {
+						
 						var position = $(this).position();
 						mese[i].xCoord = position.left
 						mese[i].yCoord = position.top
@@ -72,17 +75,29 @@
 				}
 			});
 		});
+		
+		$('#sterge_masa').click(function() {
+			$("#"+masaSelectata).remove();
+			for (j = 0; j < mese.length; j++) {
+				if (mese[j].id == masaSelectata) {
+					mese.splice(j,1)
+					
+				}
+			}
+		});
+		
 	});
 </script>
 </head>
 <body>
+
 	<div class="container">
 		<div class="top_header">
 			<button id="add_obiect">Adauga obiect</button>
 
 			<button id="add_masa">Adauga masa</button>
 
-			<button id="add_planta">Adauga planta</button>
+			<button id="sterge_masa">Sterge masa</button>
 		</div>
 
 		<div class="main"></div>

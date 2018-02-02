@@ -94,5 +94,9 @@ public class DatabaseOperations {
 	{
 		administratorMeseOpetartions.deleteAllFromTable();
 	}
+	public List<Masa> getAllMese()
+	{
+		return administratorMeseOpetartions.getAllMese();
+	}
 	
 }

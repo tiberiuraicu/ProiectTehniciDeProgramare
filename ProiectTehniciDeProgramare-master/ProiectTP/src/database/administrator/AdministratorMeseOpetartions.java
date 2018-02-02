@@ -1,5 +1,8 @@
 package database.administrator;
 
+import java.util.List;
+import java.util.Vector;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -40,5 +43,13 @@ public class AdministratorMeseOpetartions {
 		Masa masa = (Masa) session.createQuery("from Masa where id = \'" + id + "\'").uniqueResult();
 		session.getTransaction().commit();
 		return masa;
+	}
+	public List<Masa> getAllMese()
+	{
+		session = factory.getCurrentSession();
+		session.beginTransaction();
+		List<Masa> mese= session.createQuery("from Masa" ).list();
+		session.getTransaction().commit();
+		return mese;
 	}
 }

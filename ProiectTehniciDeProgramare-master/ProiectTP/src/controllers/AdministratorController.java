@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import database.main.DatabaseOperations;
 import objects.entities.Client;
+import objects.entities.Masa;
 import objects.entities.PendingOrder;
 import server.administratorOperations.AdministratorMese;
 import server.clientOperations.ClientFoodBasketOperations;
@@ -46,8 +48,8 @@ public class AdministratorController {
 	}
 	
 	@RequestMapping("/aranjareMese")
-	public String paginaAranjareMese() {
-	
+	public String paginaAranjareMese(Model model) {
+		
 		return "AsezareMese";
 	}
 }
