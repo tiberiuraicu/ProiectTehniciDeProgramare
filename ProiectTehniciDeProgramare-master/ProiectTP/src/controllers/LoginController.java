@@ -41,10 +41,8 @@ public class LoginController {
 
 			if ((clientExistent.getPassword()).equals(loginData.getLoginPassword())) {
 				if (clientExistent.getToken().equals("activat")) {
-					System.out.println("da");
 					redirectAttributes.addFlashAttribute("user", clientExistent);
-					modelAndView.setViewName("redirect:/Client/");
-					
+					modelAndView.setViewName("redirect:/Client/");	
 				}
 				else
 				{

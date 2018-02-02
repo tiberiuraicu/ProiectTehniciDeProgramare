@@ -14,9 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
-
-import database.client.ClientFoodOperations;
-import database.food.FoodDetailsOperations;
 import database.main.DatabaseOperations;
 import objects.entities.Client;
 import objects.entities.PendingOrder;

@@ -2,6 +2,7 @@ package database.main;
 
 import java.util.List;
 
+import database.administrator.AdministratorMeseOpetartions;
 import database.administrator.AdministratorOperations;
 import database.client.ClientDetailsOperations;
 import database.client.ClientFoodOperations;
@@ -10,6 +11,7 @@ import objects.entities.Administrator;
 import objects.entities.Client;
 import objects.entities.ClientFoodBasketItem;
 import objects.entities.Food;
+import objects.entities.Masa;
 import objects.entities.PendingOrder;
 
 public class DatabaseOperations {
@@ -18,6 +20,7 @@ public class DatabaseOperations {
 	AdministratorOperations administratorOperations = new AdministratorOperations();
 	FoodDetailsOperations foodDetailsOperations = new FoodDetailsOperations();
 	ClientFoodOperations clientFoodOperations = new ClientFoodOperations();
+	AdministratorMeseOpetartions administratorMeseOpetartions= new AdministratorMeseOpetartions();
 
 	public void clientInsert(Client client) {
 		clientOperations.insert(client);
@@ -83,4 +86,13 @@ public class DatabaseOperations {
 	{
 		return clientFoodOperations.getAllPendingOrdersForClient(client);
 	}
+	public void insertMasa(Masa masa)
+	{
+		administratorMeseOpetartions.insertMasa(masa);
+	}
+	public void deleteAllFromTable()
+	{
+		administratorMeseOpetartions.deleteAllFromTable();
+	}
+	
 }

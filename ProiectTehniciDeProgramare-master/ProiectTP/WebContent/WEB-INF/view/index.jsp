@@ -23,9 +23,9 @@
 		<h1>Welcome!</h1>
 		<img src="${pageContext.request.contextPath}/resources/images/img3.png" class = "user">
 		
-			<a href="/login/"><button id="button1">Log in</button></a>
+			<a href="/ProiectTP/login/"><button id="button1">Log in</button></a>
 			<br><br>
-			<a href="/register/"><button id="button2">Register</button></a>
+			<a href="/ProiectTP/register/"><button id="button2">Register</button></a>
 			<a id="passForg" href="#">Forgot password?</a>		
 	</div>
 </body>

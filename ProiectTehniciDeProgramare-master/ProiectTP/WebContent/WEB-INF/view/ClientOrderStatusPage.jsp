@@ -23,10 +23,13 @@
 		<div>
 			<table>
 				<tr>
-					<th>Title</th>
-					<th>TimeStamp</th>
-					<th>Priority</th>
-					<th>Message</th>
+					<th>ID</th>
+					<th>Food ID</th>
+					<th>Food Name</th>
+					<th>Client ID</th>
+					<th>Client Name</th>
+					<th>Command Status</th>
+					<th>Number Of Products</th>
 				</tr>
 
 			</table>

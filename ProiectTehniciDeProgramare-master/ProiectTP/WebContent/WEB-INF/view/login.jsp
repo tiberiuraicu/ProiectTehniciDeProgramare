@@ -17,7 +17,7 @@
 </head>
 <body>
 	<div class="top_header">
-		<a href="/index/"><img src="${pageContext.request.contextPath}/resources/images/logo.png" alt=""></a> <a href="/register/"><button>Register</button></a>
+		<a href="/ProiectTP/index/"><img src="${pageContext.request.contextPath}/resources/images/logo.png" alt=""></a> <a href="/register/"><button>Register</button></a>
 	</div>
 	<div class="loginBox">
 		<img src="${pageContext.request.contextPath}/resources/images/img3.png" class="user">
@@ -31,7 +31,7 @@
 		<form:input type="password" path="loginPassword" id="loginPassword" placeholder="Enter password..." required="true" />
 		<br>
 		<form:button type="submit" id="login-bttn" >Sign in</form:button>
-		<a href="/recovery/">Forgot password?</a>
+		<a href="/ProiectTP/recovery/">Forgot password?</a>
 		</form:form>
 	</div>
 
